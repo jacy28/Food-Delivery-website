@@ -1,0 +1,28 @@
+.card-container {
+  position: relative;
+  margin: 80px auto 0;
+}
+
+.product-image {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150PX;
+  height: 150PX;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+.product-card {
+  background-color: white;
+  padding: 80px 20px 10px;
+  border-radius: 25% 25% 25px 25px;
+  height: 280px;
+}
+
+.custom-btn {
+  padding: 6px 10px;
+  line-height: 1;
+}

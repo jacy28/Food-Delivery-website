@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/shop.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="green-section">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex flex-column align-items-center logo-img rounded-circle ms-5" href="dashboard.html">
+                <img src="./assets/Images/Logo pic.png" alt="Company Logo" width="100" height="70">
+                <span class="text-danger fs-6 fw-bold">Foodie</span>
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center text-lg-start w-100 d-lg-flex justify-content-lg-around">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="#" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn fs-5 text-white shadow-none">
+                            <i class='bx bx-search-alt-2'></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="profile.html">
+                            <i class='bx bxs-user'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container mb-5">
+            <h2 class="text-center text-white fs-5 fw-bold mt-5 mb-5">SHOP</h2>
+            <div class="d-flex">
+                <a href="categories.html" class="d-flex align-items-center text-decoration-none text-white fs-1"> <i
+                        class='bx bx-left-arrow-alt'></i></a>
+                <div class="bg-white mx-auto px-4 d-flex align-items-center py-2 custom-radius"
+                    style="width: 100%; max-width: 650px;">
+                    <input type="text" id="searchInput" class="form-control border-0 shadow-none fs-6"
+                        placeholder="Search">
+                    <button class="btn fs-3 border-0 p-0" id="searchBtn"><i class='bx bx-search-alt-2 ms-3'
+                            style="color: gray;"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main section -->
+        <div class="container my-5 d-flex">
+
+            <div class="bg-white custom-radius me-5 p-0" style="width: 300px;">
+                <h2 class="fs-4 fw-bold text-center mt-3 mb-3">FOODIE MENU</h2>
+                <ul class="list-unstyled">
+                    <li class="fw-bold d-flex align-items-center py-3 border-bottom">
+                        <i class='bx bxs-bowl-rice fs-1 ms-2'></i><span class="ms-3"
+                            style="font-size: 14px;">RICE</span>
+                    </li>
+                    <li class="fw-bold d-flex align-items-center py-3 border-bottom">
+                        <i class='bx bxs-pizza fs-1 ms-2'></i><span class="ms-3" style="font-size: 14px;">PIZZA</span>
+                    </li>
+                    <li class="fw-bold d-flex align-items-center py-3 border-bottom">
+                        <i class='bx bxs-coffee fs-1 ms-2'></i><span class="ms-3" style="font-size: 14px;">HOT
+                            DRINKS</span>
+                    </li>
+                    <li class="fw-bold d-flex align-items-center py-3 border-bottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36px" class="ms-2" viewBox="0 -960 960 960"
+                            width="36px" fill="#1f1f1f">
+                            <path
+                                d="M146.67-120q-27.5 0-47.09-19.58Q80-159.17 80-186.67V-312h800v125.33q0 27.5-19.58 47.09Q840.83-120 813.33-120H146.67Z..." />
+                        </svg>
+                        <span class="ms-4" style="font-size: 14px;">SANDWICH</span>
+                    </li>
+                    <li class="fw-bold d-flex align-items-center py-3 border-bottom">
+                        <i class="fa-solid fa-hotdog fs-1 ms-2"></i><span class="ms-3"
+                            style="font-size: 14px;">SALADS</span>
+                    </li>
+                    <li class="fw-bold d-flex align-items-center py-3 border-bottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ms-2" height="36px" viewBox="0 -960 960 960"
+                            width="36px" fill="#1f1f1f">
+                            <path
+                                d="M400-160h160v-44l50-20q65-26 110.5-72.5T786-400H174q20 57 65 103.5T350-224l50 20v44Z..." />
+                        </svg>
+                        <span class="ms-4" style="font-size: 14px;">NOODLES</span>
+                    </li>
+                    <li class="fw-bold d-flex align-items-center py-3 border-bottom">
+                        <i class="fa-solid fa-burger fs-1 ms-2"></i><span class="ms-3"
+                            style="font-size: 14px;">BURGER</span>
+                    </li>
+                    <li class="fw-bold d-flex align-items-center py-3 border-bottom">
+                        <i class='bx bxs-sushi fs-1 ms-2'></i><span class="ms-3" style="font-size: 14px;">SUSHI</span>
+                    </li>
+                    <li class="fw-bold d-flex align-items-center py-3 border-bottom">
+                        <i class='bx bxs-bowl-rice fs-1 ms-2'></i><span class="ms-3"
+                            style="font-size: 14px;">TACO</span>
+                    </li>
+                </ul>
+
+                <!-- Filter by Price -->
+                <div class="mt-5">
+                    <h5 class="fw-bold mb-3 text-center">FILTER BY PRICE</h5>
+                    <div class="px-2 text-center">
+                        <input type="range" class="form-range w-50" min="99" max="259" value="179" step="1"
+                            id="priceRange">
+                        <label for="priceRange" class="form-label fw-bold">
+                            PRICE: ₹ <span id="priceValue" class="fw-bold fs-4">99 - 249</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3" id="productGrid"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end w-100 bg-success custom-popup" tabindex="-1" id="cartSidebar"
+        aria-labelledby="cartSidebarLabel">
+        <div class="offcanvas-header container mt-5">
+            <a href="categories.html" class="text-white"><i class='bx bx-arrow-back fs-4'></i></a>
+            <h5 class="offcanvas-title fs-4 fw-bold text-white" id="cartSidebarLabel">CART</h5>
+            <button type="button" class="btn-close btn-white shadow-none text-reset fs-4" style="filter: invert(1);"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body container">
+            <div class="row">
+                <div class="col-lg-8 mt-5">
+                    <div id="cartItemsContainer" class="me-5"></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-between mt-5 py-3 px-2 me-5 mb-4 custom-input"
+                        style="background-color: rgba(16, 63, 16,0.5);">
+                        <input type="text" id="discountCode" class="form-control border-0 shadow-none bg-transparent"
+                            placeholder="ENTER COUPON CODE">
+                        <button class="btn fw-bold custom-applybtn" onclick="applyCoupon()">APPLY</button>
+                    </div>
+                    <p class="text-white d-flex justify-content-between fw-bold pe-5">Subtotal Rs.<span id="subtotal"><i
+                                class='bx bx-rupee' style='color:#fdf8f8'></i>0</span></p>
+                    <p class="text-white d-flex justify-content-between fw-bold pe-5">Tax and Fees<span id="tax"><i
+                                class='bx bx-rupee' style='color:#fdf8f8'></i>0</span></p>
+                    <p class="text-white d-flex justify-content-between fw-bold pe-5">Delivery<span id="delivery"><i
+                                class='bx bx-rupee' style='color:#fdf8f8'></i>0</span></p>
+                    <p class="text-white d-flex justify-content-between pe-5 fw-bold border-top border-bottom py-3">
+                        TOTAL<span id="total"><i class='bx bx-rupee' style='color:#fdf8f8'></i>0</span></p>
+                    <div class="mt-5" style="text-align: center;">
+                        <button class="btn fw-bold fs-5 text-white checkout-btn">CHECK OUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="container-fluid footer-bg p-5">
+        <div class="row p-2">
+            <div class="col-lg-4">
+                <a class="d-lg-flex flex-column justify-content-start align-items-center rounded-circle footer-img text-decoration-none mb-4 p-0"
+                    href="dashboard.html">
+                    <img src="./assets/Images/Logo pic.png" alt="Complany Logo" width="100" height="100" class="mb-0">
+                    <span class="text-danger m-0 fs-6 fw-bold">Foodie</span>
+                </a>
+                <p class="fs-5"><i class='bx bx-map fw-bold'></i> 2976 Westheimer Rd. Santa Ana, Illinois 86236</p>
+                <p class="fs-5"><i class='bx bx-envelope fw-bold'></i> support@example.com</p>
+                <p class="fs-5"><i class='bx bx-phone fw-bold'></i> +(084) 456-7890</p>
+            </div>
+            <div class="col-lg-3 fs-5">
+                <p class="fw-bold mb-4">PRODUCTS</p>
+                <p class="mb-4">Burgers</p>
+                <p class="mb-4">King Delight Products</p>
+                <p class="mb-4">Crispy Flavors</p>
+                <p class="mb-4">Breakfast Products</p>
+            </div>
+            <div class="col-lg-2 fs-5">
+                <p class="mb-4 fw-bold">QUICK LINKS</p>
+                <p class="mb-4">Home</p>
+                <p class="mb-4">Search</p>
+                <p class="mb-4">Shop</p>
+                <p class="mb-4">Contact</p>
+            </div>
+            <div class="col-lg-3 fs-5">
+                <p class="mb-4 fw-bold">OPENING HOURS</p>
+                <p class="mb-4">MONDAY-FRIDAY: 8AM-4PM</p>
+                <p class="mb-4">SATURDAY: 8AM - 12PM</p>
+                <h5 class="mb-4">FOLLOW US ON:</h5>
+                <div class="d-flex justify-content-between">
+                    <i class='bx bxl-facebook-circle fs-1' style='color:rgba(29,57,185,0.85)'></i>
+                    <i class='bx bxl-twitter fs-1' style='color:rgba(56, 215, 236, 0.85)'></i>
+                    <i class='bx bxl-instagram fs-1'></i>
+                    <i class='bx bxl-pinterest fs-1' style='color:#ea4646'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/JS/shop.js"></script>
+
+</body>
+
+</html>

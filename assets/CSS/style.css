@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.green-section{
+    background: #46B178;
+}
+
+.logo-img{
+  background-color: rgb(231, 222, 223);
+}
+.underline-offset {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+  .space{
+    color: rgb(214, 206, 206);
+  }
+  .content{
+    font-size: 1.2rem;
+  }
+  .button{
+    background-color: #E71C1C;
+    border-radius: 20px;
+  }
+  .object{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .img-rounded{
+    border-radius: 30px;
+  }
+  .arrow-card-right {
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 70%;
+    height: 100%;
+  }
+  
+  .arrow-card-left {
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 50%);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 70%;
+    height: 100%;
+  }
+  
+  .arrow-img {
+    max-width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .right-ribbon {
+    position: absolute;
+    top: 0;
+    right: 117px;
+    color: #333;
+  }
+  .left-ribbon {
+    position: absolute;
+    top: 0;
+    left: 117px;
+    color: #333;
+  }
+  .footer-bg{
+    background-color: rgb(206, 243, 231);
+  }
+
+  .categoryobject{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .category-sec img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+    /* login.html */
+  .icon{
+    width: 30px;
+    height: 30px;
+  }
+  .form-input{
+    border: none;
+    border-bottom:1px solid rgb(167, 164, 164);
+    width: 100%;
+    max-width: 600px;
+  }
+  .form-control {
+    border-radius: 0 !important;
+  }
+  .bg-section {
+    background-image: url('../Images/login-bg.jpeg');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+
+  .box-rounded, .custom-radius{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+  }
+  input[placeholder]{
+    font-size: 12px;
+  }
+  #profile-form label{
+    color: rgba(250, 239, 239,0.7);
+    font-size: 14px;
+  }
+  #profile-form input{
+    border: none;
+    border-bottom: 1px solid rgba(250, 239, 239,0.7);
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
+  }
+  #profile-form input:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom-color: #fff;
+  }
+.icon-btn{
+  transform: translate(-25%, -25%); 
+  width: 40px; 
+  height: 40px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1;
+}
+/* product.html */
+.qtyInput{
+  border: none;
+}
+.apply-radius{
+  border-radius: 15px;
+  width: 200px;
+}
+.card-img-top{
+  position: absolute;
+  translate: -25%, -25%;
+}
+
+/* Cart Offcanvas */

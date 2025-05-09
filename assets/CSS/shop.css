@@ -1,0 +1,38 @@
+.custom-radius, .custom-card{
+    border-radius: 25px;
+}
+.custom-btn {
+  padding: 6px 10px;
+  line-height: 1;
+}
+.custom-card img{
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.custom-popup{
+  border-radius: 35px;
+}
+.custom-input{
+  border-radius: 20px;
+}
+.custom-applybtn{
+  border-radius: 25px;
+  background-color: white;
+  line-height: 1;
+  padding: 0 25px;
+}
+#discountCode::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+.checkout-btn{
+  width: 75%;
+  background: #E71C1C;
+  border-radius: 10px;
+}
+.custom-cardradius{
+  border-radius: 20px;
+  border: 7px solid green;
+}
