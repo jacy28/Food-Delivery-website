@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" href="assets/Images/Logo pic.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/shop.css">
+    <link rel="stylesheet" href="assets/CSS/checkout.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="green-section">
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 nav-bg mb-5">
+            <div class="container-fluid">
+
+                <!-- Logo (Left) -->
+                <a class="navbar-brand d-flex flex-column align-items-center logo-img rounded-circle ms-4"
+                    href="dashboard.html">
+                    <img src="./assets/Images/Logo pic.png" alt="Company Logo">
+                    <span class="text-danger fw-bold" style="font-size: 12px;">Foodie</span>
+                </a>
+
+                <!-- Toggler (Mobile) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Content -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <!-- Center Nav Links with spacing -->
+                    <ul class="navbar-nav mx-auto text-center px-5 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" href="categories.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" href="#" data-bs-toggle="offcanvas"
+                                data-bs-target="#cartSidebar">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right Icons -->
+                    <div class="d-flex align-items-center">
+                        <button class="btn fs-5 text-white shadow-none me-2">
+                            <i class='bx bx-search-alt-2'></i>
+                        </button>
+                        <a class="nav-link text-white fs-5" href="profile.html">
+                            <i class='bx bxs-user'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <!-- checkout section -->
+    <section class="container mb-5 text-white px-4" style="margin-top: 180px;">
+  <div class="d-flex justify-content-start mt-3 pe-4">
+    <a href="#" class="text-decoration-none text-white fs-1" onclick="event.preventDefault(); window.history.back();">
+      <i class='bx bx-left-arrow-alt'></i>
+    </a>
+  </div>
+
+  <h2 class="fw-bold text-center fs-4">CHECKOUT</h2>
+
+  <div class="container mt-4">
+    <form id="checkout-form">
+      <div class="tracking_vertical">
+        <div class="track-step completed">
+          <div class="circle"></div>
+          <h2 class="fw-bold fs-3 mb-3">Information :</h2>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-8">
+              <label for="address" class="form-label fs-5 mb-2">Address :</label>
+              <textarea id="address"
+                class="form-control bg-transparent shadow-none checkout_address p-2"
+                rows="3" placeholder="Enter your address"></textarea>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12 col-md-8">
+              <label for="phone" class="form-label fs-5 mb-2">Phone Number:</label>
+              <input type="tel" id="phone"
+                class="form-control shadow-none bg-transparent checkout_phone p-3"
+                placeholder="Enter your phone number">
+            </div>
+          </div>
+        </div>
+
+        <div class="track-step completed">
+          <div class="circle"></div>
+          <h2 class="fw-bold fs-3 mb-3">Payment Methods :</h2>
+
+          <div class="form-check mb-2 ms-1">
+            <input type="radio" name="payment" id="card" class="form-check-input fs-4">
+            <label for="card" class="form-check-label fs-4">Credit / Debit Card Payment</label>
+            <div class="mt-2 mb-4 payment_icon">
+              <img src="assets/Images/mastercard.png" class="me-2" alt="Mastercard">
+              <img src="assets/Images/visa-electron.png" class="me-2" alt="Visa Electron">
+              <img src="assets/Images/credit-card.png" style="width: 30px;" alt="Credit Card">
+            </div>
+          </div>
+
+          <div class="form-check mb-2 ms-1">
+            <input type="radio" name="payment" id="cod" class="form-check-input fs-4">
+            <label for="cod" class="form-check-label fs-4">Cash on Delivery</label>
+          </div>
+
+          <div class="form-check mb-4 ms-1">
+            <input type="radio" name="payment" id="upi" class="form-check-input fs-4">
+            <label for="upi" class="form-check-label fs-4">Pay Via UPI</label>
+          </div>
+        </div>
+
+        <div class="track-step">
+          <div class="circle"></div>
+          <h2 class="fs-3 fw-bold">Order Delivery</h2>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+    <!-- Footer section -->
+    <footer class="container-fluid footer-bg p-5">
+        <div class="row p-2">
+            <div class="col-lg-4">
+                <a class="d-flex flex-column justify-content-start align-items-center rounded-circle footer-img text-decoration-none mb-4 p-0"
+                    href="#">
+                    <img src="./assets/Images/Logo pic.png" alt="Complany Logo" width="100" height="100" class="mb-0">
+                    <span class="text-danger m-0 fs-6 fw-bold">Foodie</span>
+                </a>
+                <p class="fs-5"><i class='bx bx-map fw-bold'></i> 2976 Westheimer Rd. Santa Ana, Illinois 86236</p>
+                <p class="fs-5"><i class='bx bx-envelope fw-bold'></i> support@example.com</p>
+                <p class="fs-5"><i class='bx bx-phone fw-bold'></i> +(084) 456-7890</p>
+            </div>
+            <div class="col-lg-3 fs-5">
+                <p class="fw-bold mb-4">PRODUCTS</p>
+                <p class="mb-4">Burgers</p>
+                <p class="mb-4">King Delight Products</p>
+                <p class="mb-4">Crispy Flavors</p>
+                <p class="mb-4">Breakfast Products</p>
+            </div>
+            <div class="col-lg-2 fs-5">
+                <p class="mb-4 fw-bold">QUICK LINKS</p>
+                <p class="mb-4">Home</p>
+                <p class="mb-4">Search</p>
+                <p class="mb-4">Shop</p>
+                <p class="mb-4">Contact</p>
+            </div>
+            <div class="col-lg-3 fs-5">
+                <p class="mb-4 fw-bold">OPENING HOURS</p>
+                <p class="mb-4">MONDAY-FRIDAY: 8AM-4PM</p>
+                <p class="mb-4">SATURDAY: 8AM - 12PM</p>
+                <h5 class="mb-4">FOLLOW US ON:</h5>
+                <div class="d-flex justify-content-between">
+                    <i class='bx bxl-facebook-circle fs-1' style='color:rgba(29,57,185,0.85)'></i>
+                    <i class='bx bxl-twitter fs-1' style='color:rgba(56, 215, 236, 0.85)'></i>
+                    <i class='bx bxl-instagram fs-1'></i>
+                    <i class='bx bxl-pinterest fs-1' style='color:#ea4646'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/JS/cart.js"></script>
+
+</body>
+
+</html>

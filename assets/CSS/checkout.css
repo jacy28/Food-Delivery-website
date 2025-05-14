@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+#checkout-form input::placeholder, #checkout-form textarea::placeholder{
+    color: rgb(243, 238, 238);
+}
+.checkout_address, .checkout_phone{
+  border: 4px solid rgb(180, 243, 180) !important;
+  border-radius: 10px !important;
+}
+
+
+.tracking_vertical{
+  position: relative;
+  margin-left: 30px;
+  padding-left: 30px;
+  border-left: 2px solid #ccc;
+}
+.track-step {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.track-step .circle {
+  position: absolute;
+  left: -41px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.track-step.completed .circle {
+  background-color: rgb(22, 206, 22);
+}
+.payment_icon img{
+  width: 40px;
+}

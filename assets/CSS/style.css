@@ -2,19 +2,36 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
 }
-.green-section{
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.green-section, .nav-bg{
     background: #46B178;
 }
 
 .logo-img{
   background-color: rgb(231, 222, 223);
 }
+.logo-img img{
+  width: 90px;
+  height: 70px;
+}
 .underline-offset {
     text-decoration: underline;
     text-underline-offset: 10px;
   }
+  
+  .header{
+    letter-spacing: 3px;
+  }
+
+.input-group {
+  border-radius: 15px; 
+  overflow: hidden; 
+}
+
   .space{
     color: rgb(214, 206, 206);
   }
@@ -26,14 +43,17 @@
     border-radius: 20px;
   }
   .object{
+    max-width: 100%;
     width: 150px;
-    height: 150px;
+    height: auto;
     object-fit: cover;
   }
   
   .img-rounded{
     border-radius: 30px;
   }
+
+  /* offer section */
   .arrow-card-right {
     clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -54,18 +74,128 @@
     object-fit: cover;
   }
   
+.right-ribbon,
+.left-ribbon {
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100px;
+  background-color: rgb(173, 15, 15);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 12px;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Positioning */
+.right-ribbon {
+  right: 117px;
+}
+
+.left-ribbon {
+  left: 117px;
+}
+
+@media (max-width: 768px) {
+  .arrow-img {
+    max-width: 100px;
+    height: 100px;
+    margin: 0 1rem;
+  }
+
+  .text-content h5 {
+    font-size: 1rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
+
   .right-ribbon {
-    position: absolute;
-    top: 0;
-    right: 117px;
-    color: #333;
+    right: 105px;
   }
+
   .left-ribbon {
-    position: absolute;
-    top: 0;
-    left: 117px;
-    color: #333;
+    left: 105px;
   }
+
+  .ribbon-text span {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .arrow-img {
+    max-width: 70px;
+    height: 70px;
+  }
+
+  .right-ribbon,
+  .left-ribbon {
+    width: 50px;
+    height: 70px;
+    padding-top: 6px;
+  }
+
+  .right-ribbon {
+    right: 78px;
+  }
+
+  .left-ribbon {
+    left: 78px;
+  }
+
+  .ribbon-text span {
+    font-size: 0.85rem !important;
+  }
+
+  .text-content {
+    padding: 0.5rem;
+  }
+}
+
+  /* Testimonials */
+.testimonial-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+}
+
+.testimonial-image {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;           /* Slightly bigger image */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: rgb(247, 239, 239);
+}
+
+.testimonial-card {
+  width: 100%;
+  padding-top: 120px;       /* Adjust to fit the new image */
+  padding-left: 10px;
+  padding-right: 10px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  max-width: 250px;
+  min-width: 200px;
+}
+
+/* Font sizes stay readable */
+.testimonial-card h3,
+.testimonial-card p {
+  font-size: 0.9rem;
+}
+
+/* footer */
   .footer-bg{
     background-color: rgb(206, 243, 231);
   }
@@ -94,6 +224,12 @@
   .form-control {
     border-radius: 0 !important;
   }
+  #togglePassword{
+    top: 50%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    cursor: pointer;
+  }
   .bg-section {
     background-image: url('../Images/login-bg.jpeg');
     background-size: cover;
@@ -109,6 +245,8 @@
   input[placeholder]{
     font-size: 12px;
   }
+
+  /* profile.html */
   #profile-form label{
     color: rgba(250, 239, 239,0.7);
     font-size: 14px;
@@ -138,6 +276,7 @@
   align-items: center; 
   z-index: 1;
 }
+
 /* product.html */
 .qtyInput{
   border: none;
@@ -151,4 +290,3 @@
   translate: -25%, -25%;
 }
 
-/* Cart Offcanvas */

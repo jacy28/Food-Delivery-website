@@ -2,11 +2,11 @@ document.getElementById('signup-form').addEventListener('submit', function(e) {
     e.preventDefault();
   
     const username = document.getElementById('signup-username').value.trim();
-    const password = document.getElementById('signup-password').value;
+    const password = document.getElementById('password').value;
     const errorElement = document.getElementById('signupError');
     
     // Clear previous error messages
-    errorElement.style.display = 'none';
+    errorElement.textContent = "";
     
     // Validate Username
     if (username === "") {

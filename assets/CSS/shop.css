@@ -1,16 +1,25 @@
-.custom-radius, .custom-card{
-    border-radius: 25px;
+.custom-card {
+  border-radius: 25px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
 }
-.custom-btn {
-  padding: 6px 10px;
-  line-height: 1;
+
+.custom-card:hover {
+  transform: translateY(-5px);
 }
-.custom-card img{
+
+.custom-card img {
   width: 100%;
-  max-width: 100px;
-  height: 100px;
+  max-width: 120px;
+  height: 120px;
   object-fit: cover;
+  margin-bottom: 10px;
 }
+
+/* cart */
 .custom-popup{
   border-radius: 35px;
 }
