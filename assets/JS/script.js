@@ -1,9 +1,15 @@
 // index.html
-if (window.location.pathname.includes('index.html') || window.location.pathname === "/") {
-  document.addEventListener('click', function () {
-    window.location.href = 'login.html';
-  });
-}
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the filename from the URL
+  const path = window.location.pathname;
+  const fileName = path.substring(path.lastIndexOf('/') + 1);
+
+  if (fileName === '' || fileName === 'index.html') {
+    document.addEventListener('click', function () {
+      window.location.href = 'login.html';
+    });
+  }
+});
 
 // login.html
 function closeLogin() {
