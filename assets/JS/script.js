@@ -66,11 +66,11 @@ document.addEventListener('DOMContentLoaded', function () {
           passwordError.style.display = "block";
           hasError = true;
         }
-
         if (!hasError) {
           localStorage.setItem('isLoggedIn', true);
-          window.location.href = "dashboard.html";
-        }
+          localStorage.setItem('loggedInUser', user.username);  // ✅ IMPORTANT
+          window.location.href = "dashboard.html"; // or profile.html if you're routing directly
+          }
       }
     });
   }

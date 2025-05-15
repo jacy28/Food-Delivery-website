@@ -1,6 +1,7 @@
 // Fetch users
-  const users = JSON.parse(localStorage.getItem('users')) || [];
-  const currentUser = users.find(user => user.username === loggedInUser);
+const loggedInUser = localStorage.getItem('loggedInUser');
+const users = JSON.parse(localStorage.getItem('users')) || [];
+const currentUser = users.find(user => user.username === loggedInUser);
 
   if (!currentUser) {
     // If user data is missing
